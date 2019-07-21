@@ -4,6 +4,22 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.idea/
+.ionic/
+.sourcemaps/
+.sass-cache/
+.tmp/
+.versions/
+coverage/
+www/
+node_modules/
+tmp/
+temp/
+platforms/
+plugins/
+plugins/android.json
+plugins/ios.json
+$RECYCLE.BIN/
 
 # Runtime data
 pids

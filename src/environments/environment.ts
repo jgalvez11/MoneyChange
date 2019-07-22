@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  URL_CURRENCY_CONVERTER: 'http://data.fixer.io/api/latest',
+  KEY_URL_CURRENCY_CONVERTER: '33b23d6e01efe285daf21f65e1124757'
 };
 
 /*
@@ -15,5 +17,3 @@ export const environment = {
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
 
-const URL_CURRENCY_CONVERTER = 'http://data.fixer.io/api/latest';
-const KEY_URL_CURRENCY_CONVERTER = '33b23d6e01efe285daf21f65e1124757';

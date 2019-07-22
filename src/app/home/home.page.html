@@ -6,9 +6,85 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    <div class="ion-padding">
-        The world is your oyster.
-        <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content class="ion-no-padding">
+    <div class="home_header">
+        <div style="text-align: center;">
+            <div class="home_avatar"></div>
+        </div>
+        <div class="home_actions">
+            <ion-row size="12">
+                <ion-col offset="2" size="2" class="col_">
+                    <div class="home_options"></div>
+                </ion-col>
+                <ion-col size="2" class="col_">
+                    <div class="home_options"></div>
+                </ion-col>
+                <ion-col size="2" class="col_">
+                    <div class="home_options"></div>
+                </ion-col>
+                <ion-col size="2" class="col_">
+                    <div class="home_options"></div>
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+    <div class="home_body">
+        <ion-row size="12">
+            <ion-col offset-xl="3" offset-lg="2" size="6" size-xs="12" size-md="12" size-lg="4" size-xl="3">
+                <ion-item class="item_1">
+                    <ion-input required [(ngModel)]="value" type="text" placeholder="EU" (ionChange)="convert('EUR', '€');"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col size="6" size-xs="12" size-md="12" size-lg="4" size-xl="3">
+                <ion-item class="item_2">
+                    <ion-input readonly [(ngModel)]="response" type="text" placeholder="USD"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <div class="home_btn_form">
+            <ion-button block color="medium" (click)="onSubmit();" [disabled]="!value">
+                Calculate
+            </ion-button>
+        </div>
+    </div>
+    <div class="home_footer">
+        <div class="home_actions_footer">
+            <ion-row size="12">
+                <ion-col offset="2" size="2">
+                    <div class="home_options_footer1"></div>
+                    <div class="option1"></div>
+                    <div class="option2"></div>
+                    <div class="option3"></div>
+                </ion-col>
+                <ion-col size="2">
+                    <div class="home_options_footer1"></div>
+                    <div class="option1"></div>
+                    <div class="option2"></div>
+                    <div class="option3"></div>
+                </ion-col>
+                <ion-col size="2">
+                    <div class="home_options_footer1"></div>
+                    <div class="option1"></div>
+                    <div class="option2"></div>
+                    <div class="option3"></div>
+                </ion-col>
+                <ion-col size="2">
+                    <div class="home_options_footer2"></div>
+                    <div class="home_options_footer3">
+                        <ion-row>
+                            <ion-col>
+                                <div class="ult_option"></div>
+                            </ion-col>
+                            <ion-col>
+                                <div class="ult_option"></div>
+                            </ion-col>
+                            <ion-col>
+                                <div class="ult_option"></div>
+                            </ion-col>
+                        </ion-row>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </div>
     </div>
 </ion-content>

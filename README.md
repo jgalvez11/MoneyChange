@@ -3,12 +3,19 @@ Un equipo de entrepreneurs está diseñando el modelo de negocio de su startup h
 
 # Versiones
 
-Ionic V4 (CLI 5.2.2),
-Angular V7 (CLI 7.3.9),
+Ionic V4 (CLI 5.2.2)
+
+
+Angular V7 (CLI 7.3.9)
+
+
 Node V10.15.1
 
 # Install
 
-Descargar repositorio, 
-ejecutar npm install, 
+Descargar repositorio
+
+
+ejecutar npm install
+
 luego ionic serve
